@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "node-mcp-server": {
+      "command": "node",
+      "args": ["C:/Users/glauc/Desktop/node-mcp-server/node-mcp-server/dist/mcp-server.js"],
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}

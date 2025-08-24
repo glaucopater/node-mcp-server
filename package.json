@@ -1,0 +1,30 @@
+{
+  "name": "node-mcp-server",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol (MCP) server implementation in Node.js that provides tools, resources, and prompts for AI assistants.",
+  "main": "dist/mcp-server.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/mcp-server.js",
+    "test:cli": "npx ts-node cli-client.ts",
+    "dev": "ts-node mcp-server.ts",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@types/ws": "^8.18.1",
+    "typescript": "^5.9.2",
+    "ts-node": "^10.9.1"
+  },
+  "keywords": ["mcp", "model-context-protocol", "ai", "llm"],
+  "author": "Your Name",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glaucopater/node-mcp-server.git"
+  }
+}

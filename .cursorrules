@@ -1,0 +1,27 @@
+# Cursor Rules for MCP Integration
+
+## MCP Server Configuration
+This project includes a Model Context Protocol (MCP) server that provides:
+- System information tools (secure, read-only)
+- External API data fetching (JSONPlaceholder todos)
+
+## Available Tools
+- `get_system_info`: Get system information about the current environment
+- `get_random_data`: Fetch random todo data from JSONPlaceholder API (todos 1-100)
+
+## Usage Instructions
+The AI assistant can now use these tools directly. For example:
+- "Show me system information"
+- "What's my current system information?"
+- "Get details about my Node.js environment"
+- "Fetch some random todo data"
+- "Get todo data for ID 42"
+
+## Security Note
+✅ This MCP server is configured for security with read-only system information access.
+✅ External API calls are limited to the JSONPlaceholder API for demo purposes.
+✅ No file operations or command execution capabilities are available.
+✅ Safe for use in any environment.
+
+## MCP Integration
+The server is configured in `.cursor/mcp.json` and provides secure system information and API data through the MCP protocol.
